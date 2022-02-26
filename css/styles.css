@@ -36,7 +36,9 @@ body {
 }
 
 nav li a:hover {
+    border-radius: .5rem;
     background-color: #fff8dc;
+    
 }
 .navbar-light .navbar-brand {
     color: #fff8dc;
