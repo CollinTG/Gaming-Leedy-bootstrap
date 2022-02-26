@@ -1,0 +1,182 @@
+/*
+Collin Leedy
+CSS Style Sheet
+*/
+
+/* NO CSS RESET WITH BOOTSTRAP*/
+
+html {
+    /* setting font-size here acts as a multiplier for all font sizes styled below that use em, rem, or % */
+    font-size: 100%;
+}
+
+body {
+    background-color: #01294d;
+    font-family: 'Ubuntu', sans-serif, Arial, Helvetica;
+    line-height: 1.4;
+}
+.site-title {display: none;}
+
+/* BACKGROUNDS FOR DIFFERENT AREAS: */
+.wrapper-header {
+    /* will stretch 100% of the way across any screen. width is 100% by default even if we DON'T declare this width */
+    width: 100%;
+    background-color: rgb(1, 41, 77);
+    text-align: center;
+    margin: 0 auto;
+}
+.wrapper-nav {
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    background-color: rgb(53, 64, 75);
+    padding: 10px;
+    font-family: 'Bungee', cursive, Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
+}
+
+nav li a:hover {
+    background-color: #fff8dc;
+}
+.navbar-light .navbar-brand {
+    color: #fff8dc;
+    -webkit-text-stroke: 2px #000;
+  }
+ .nav-item, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(144, 203, 255) ;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(144, 203, 255);
+  }
+
+.navbar-toggler {
+    background-color: cornsilk;
+}
+.wrapper-main {
+background-color: #fff8dc; /* Standard modern practice to let most of content have white background */
+margin: 1rem auto;
+clear: both;
+border-radius: 1rem;
+padding: 1rem 0;
+}
+
+.wrapper-footer {
+    background-color: rgb(53, 64, 75);
+    margin: 1rem auto;
+    clear: both;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+footer {text-align: center;}
+footer p {color: cornsilk;}
+footer .container {
+    padding: 0 auto;
+}
+/* text for every page */
+
+a { color: rgb(1, 41, 77);}
+
+a:hover {color: rgb(2, 82, 154);}
+
+article {
+    margin-bottom: 1rem;
+}
+section {padding: .5rem 0;}
+section p {
+    margin: 0 0 .5rem 1rem;
+}
+
+p {
+    font-size: 1rem;
+    padding-bottom: .25rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+}
+h1 {font: 2rem;}
+h2 {
+	/* using em, rem, or % unit lets us easily change its size on various screen widths */
+	font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.6rem;
+    text-align: center; 
+    margin-bottom: -0.1rem;
+}
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+h5 {font-size: 1.3rem;
+margin-bottom: -.1rem;
+}
+h6 {font-size: .8rem;}
+
+footer a,nav ul li a,.navbar-brand {
+    color: rgb(144, 203, 255);
+}
+
+/* classes  */
+.link-to-template {
+    font-size: small;
+    color: rgb(53, 64, 75);
+}
+.page-title {text-align: center;}
+
+.article-border{
+    padding: 1rem 2rem;
+    background-color: rgb(255, 243, 193);
+    border: .1rem;
+    border-style: groove;
+    border-radius: .25rem;
+}
+
+.card {
+    background-color: #ffdc51;
+    margin: 1rem auto;
+}
+.card-title {
+    text-align: center;
+}
+.btn {
+    padding: 1rem 45%;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width:400px){
+    html {font-size: 100%;}
+} 
+
+@media screen and (min-width:480px){
+    html {font-size: 105%;}
+   
+} 
+
+@media screen and (min-width:720px){
+    html { font-size: 105%;}
+
+} 
+
+@media screen and (min-width:1080px){
+    html {font-size: 110%;}
+  
+} 
+
+@media screen and (min-width:1280px){
+    html {font-size: 115%;}
+    header, nav, main, footer {
+        max-width: 1200px;
+        margin: 20px auto auto auto;
+    }
+    .wrapper-header, .wrapper-nav, .wrapper-footer, .wrapper-main{
+       max-width: 1280px;
+    }
+    
+    nav li {
+        margin: auto 1rem;
+    }
+} 
