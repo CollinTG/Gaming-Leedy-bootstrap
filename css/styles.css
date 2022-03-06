@@ -230,7 +230,7 @@ button {
     html { font-size: 105%;}
 } 
 
-@media screen and (min-width:1080px){
+@media screen and (min-width:992px){
     html {font-size: 105%;}
     .wrapper-form { 
         max-width: 800px;
@@ -239,7 +239,7 @@ button {
     .form-group { padding: inherit auto;}
 } 
 
-@media screen and (min-width:1280px){
+@media screen and (min-width:1200px){
     html {font-size: 108%;}
     header, nav, main, footer {
         /* max-width: 1000px; */
